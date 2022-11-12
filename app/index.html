@@ -1,0 +1,22 @@
+<button onclick='btnOnClick()'>Натисни мене!</button>
+<br>
+<br>
+<textarea type="text" id="result" style="width:200px;" rows="3">
+</textarea>
+
+<script>
+	const btnOnClick=() => {
+		//do some stuff
+		function_1();
+	}
+
+	const function_1=()=>{
+		const currentDateTime = getDateAndTime();
+		showResult(currentDateTime);
+	}
+
+	const showResult=(currentDateTime)=>{
+		document.getElementById('result').value=currentDateTime;
+	}
+</script>
+<script type="text/javascript" src="./js/services.js"></script>
